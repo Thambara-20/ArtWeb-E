@@ -1,0 +1,86 @@
+.App{
+ 
+  padding: 0px 2%;
+  align-items: center;
+ 
+  justify-content : center;
+  text-align: center;
+}
+
+
+.all{
+  width: 50%;
+  align-items: center;
+}
+.items{
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .b{
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  gap: 10px;
+  }
+  
+  /* img{
+  width: 30%;
+  height: 300px;
+  min-width: 160px;
+  align-items: center;
+  object-fit: cover;
+  background-color: rgb(190, 207, 201);
+  } */
+
+.form{
+  display: flex;
+  align-items: center;
+  padding: 0 9px 10px;
+  flex-direction: column;
+  gap:25px
+}
+
+input{
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid gray;
+  align-items: center;
+}
+.formButton{
+  border: none;
+  width: fit-content;
+  padding: 10px 100px 10px 100px;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(122, 129, 112);
+  color: rgb(18, 15, 15);
+}
+.update{
+
+  background-color: greenyellow;
+  padding: 10 10 10;
+  text-decoration:none;
+}
+.delete{
+
+  background-color: rgba(255, 47, 123, 0.76);
+  padding: 10 10 10;
+}
+.l{ 
+  padding: 30px 30px 30px 30px;
+  
+  color: rgba(255, 255, 255, 0.834);
+  text-decoration:none;
+
+  
+}
+.l:hover {
+  color: rgba(207, 207, 207, 0.874)
+}

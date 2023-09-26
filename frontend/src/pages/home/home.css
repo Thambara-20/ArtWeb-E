@@ -1,0 +1,33 @@
+/* Default styles for larger screens */
+.mainwrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .mainhome-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  .imagecontainer-main{
+    margin: 20px ;
+    border-radius: 5px;
+
+  }
+  
+
+  .imagecontainer{
+    border-radius: 5px;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .item-container {
+     
+    }
+  }
+  

@@ -27,8 +27,10 @@ function NavBar({ isDarkMode, handleSwitchChange }) {
   }, []);
 
  return (
-
-    <Navbar bg={isDarkMode ? "dark" : "light"} variant={isDarkMode ? "dark" : "light"} expand="lg" className="navbar" w>
+    
+      
+ 
+    <Navbar bg={isDarkMode ? "dark" : "light"} variant={isDarkMode ? "dark" : "light"} expand="lg" className="navbar" w style={{position:'fixed',width:'100%', opacity:0.8 ,zIndex:1000}}>
       <Container className='container' >
         <Navbar.Brand as={Link} className="nav-item nav-link" to="/">Art</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -56,9 +58,13 @@ function NavBar({ isDarkMode, handleSwitchChange }) {
 
         </Navbar.Collapse>
       </Container>
+      <div style={{filter:'blur(1px)',position:'fixed', width:'100%',top:0,left:0, backgroundColor:'black'}}>
+
+      </div>
 
 
     </Navbar>
+
 
 
 

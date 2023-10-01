@@ -3,7 +3,7 @@ import mongoose from "mongoose"
 import cors from "cors"
 import itemroute from "./routes/itemroute.js"
 
-const app =express();
+const app = express();
 
 mongoose.connect('mongodb://127.0.0.1:27017/Arts', {  useNewUrlParser: true ,useUnifiedTopology:true});
 

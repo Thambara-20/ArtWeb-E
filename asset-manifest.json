@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e190fd0c.css",
+    "main.js": "/static/js/main.96fcab57.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/chinise-city.jpg": "/static/media/chinise-city.b869a62776686ecca6d9.jpg",
+    "static/media/img.jpg": "/static/media/img.fe9c2096dabd34e0ec07.jpg",
+    "index.html": "/index.html",
+    "main.e190fd0c.css.map": "/static/css/main.e190fd0c.css.map",
+    "main.96fcab57.js.map": "/static/js/main.96fcab57.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e190fd0c.css",
+    "static/js/main.96fcab57.js"
+  ]
+}

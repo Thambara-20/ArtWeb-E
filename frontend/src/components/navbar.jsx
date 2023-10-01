@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React  from 'react'
 import Button from './button'
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
@@ -8,23 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-function NavBar({ isDarkMode, handleSwitchChange }) {
-
-  const [potraits, setPotraits] = useState([])
+function NavBar({ isDarkMode}) {
 
 
-  useEffect(() => {
-    // Fetch items
-    const fetchAllitems = async () => {
-      try {
-        const res = await axios.get("http://localhost:8800/items");
-        setPotraits(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchAllitems();
-  }, []);
 
  return (
     

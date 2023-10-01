@@ -17,23 +17,23 @@ function NavBar({ isDarkMode}) {
  
     <Navbar bg={isDarkMode ? "dark" : "light"} variant={isDarkMode ? "dark" : "light"} expand="lg" className="navbar" w style={{position:'fixed',width:'100%', opacity:0.8 ,zIndex:1000}}>
       <Container className='container' >
-        <Navbar.Brand as={Link} className="nav-item nav-link" to="/">Art</Navbar.Brand>
+        <Navbar.Brand as={Link} className="nav-item nav-link" to="ArtWeb-E/home">Art</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/" className="nav-item nav-link">Home</Link>
-            <Nav.Link as={Link} className="nav-item nav-link" to="/store">Store</Nav.Link>
+            <Link to="ArtWeb-E/home" className="nav-item nav-link">Home</Link>
+            <Nav.Link as={Link} className="nav-item nav-link" to="ArtWeb-E/store">Store</Nav.Link>
             <NavDropdown title="Category" id="basic-nav-dropdown" >
-              <NavDropdown.Item href="/design">Design</NavDropdown.Item>
-              <NavDropdown.Item href="/potrait">Potrait</NavDropdown.Item>
+              <NavDropdown.Item href="ArtWeb-E/design">Design</NavDropdown.Item>
+              <NavDropdown.Item href="ArtWeb-E/potrait">Potrait</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/All">Separated link</NavDropdown.Item>
+              <NavDropdown.Item href="ArtWeb-E/All">Separated link</NavDropdown.Item>
             </NavDropdown>
             <form class="d-flex" role="search" >
             </form>
 
           </Nav>
-          <Link to='/cart' style={{ marginRight: '10px' }} >
+          <Link to='ArtWeb-E/cart' style={{ marginRight: '10px' }} >
             <ShoppingCartIcon className='linknav' style={{ color: isDarkMode ? "white" : "black", fontSize: '30' }}>
             </ShoppingCartIcon>
 

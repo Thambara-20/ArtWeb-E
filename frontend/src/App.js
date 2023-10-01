@@ -52,21 +52,23 @@ function App() {
      <div >
      <ThemeProvider theme={theme}>
     <CssBaseline />
+   
     <Router>
     <Navbar isDarkMode={isDarkModeSwitch || isDarkModeOS} handleSwitchChange={handleSwitchChange} />
-      
+   
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/store' element={<Store />} />
+        <Route path='ArtWeb-E/home' element={<Home />} />
+        <Route path='ArtWeb-E/contact' element={<Contact />} />
+        <Route path='ArtWeb-E/sign-up' element={<SignUp />} />
+        <Route path='ArtWeb-E/store' element={<Store />} />
 
         {/* <Route path='/statues' element={<statues />} /> */}
        
-        <Route path='/potrait' element={<Potrait />} />
-        <Route path='/category' element={<Category data={Categories_data.all_category} />} />
+        <Route path='ArtWeb-E/potrait' element={<Potrait />} />
+        <Route path='ArtWeb-E/category' element={<Category data={Categories_data.all_category} />} />
       </Routes>
     </Router>
+  
 </ThemeProvider>
      </div>
 

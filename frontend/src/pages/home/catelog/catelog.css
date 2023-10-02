@@ -22,17 +22,16 @@
     justify-content: space-between;
   }
 
-
   .imagecontainer{
     border-radius: 5px;
     width: 100%;
     max-width: 700px;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.2s ease-in-out ;
+    transition: transform 0.2s ease-in-out !important;
   }
   .imagecontainer:hover {
-    transform: scale(1.04);
+    transform: scale(1.04) !important;
   }
 
   /* Media query for smaller screens */

@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import './Home.css';
 import Welcome from './welcome/Welcome';
-import Catelog from './catelog/catelog';
 import SubNav from './subnav/Subnavbar';
 
 

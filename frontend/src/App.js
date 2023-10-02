@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Contact from './pages/contact';
-
+import Contact from './pages/Contact';
+import 'aos/dist/aos.css';
 // import About from './components/pages/About';
-import SignUp from './pages/signup';
-import Home from './pages/home/home';
+import SignUp from './pages/Signup';
+import Home from './pages/home/Home';
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import Category from './pages/category/category';
 import Categories_data from './pages/category/categories_data';
-import Store from './pages/store';
+import Store from './pages/Store';
 import 'bootstrap/dist/css/bootstrap.css';
 import Potrait from './pages/category/potrait';
 
@@ -57,7 +57,7 @@ function App() {
     <Navbar isDarkMode={isDarkModeSwitch || isDarkModeOS} handleSwitchChange={handleSwitchChange} />
    
       <Routes>
-        <Route path='ArtWeb-E/home' element={<Home />} />
+        <Route path='ArtWeb-E/home' element={<Home isDarkMode = {isDarkModeSwitch || isDarkModeOS}/>} />
         <Route path='ArtWeb-E/contact' element={<Contact />} />
         <Route path='ArtWeb-E/sign-up' element={<SignUp />} />
         <Route path='ArtWeb-E/store' element={<Store />} />

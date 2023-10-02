@@ -8,9 +8,11 @@ import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import './catelog.css';
 import img from '../../../assets/covers/img.jpg';
+import AOS from 'aos';
+import Loading from '../../../components/Loading';
 
 
-const Catelog = () => {
+const Catelog = ({isDarkMode}) => {
   const [items, setItems] = useState([]);
 
   const handleBuy = async (id) => {
@@ -18,6 +20,12 @@ const Catelog = () => {
     // For now, let's assume you have a function addToCart(id) that adds the item with the given ID to the cart
     // addToCart(id);
   };
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -31,15 +39,18 @@ const Catelog = () => {
     fetchItems();
   }, []);
 
+  if (items.length === 0) {
+    return <Loading/>;
+  }
+
   return (
-    <div className='mainwrapper'>
-     
+    <div className='mainwrapper' data-aos ='fade-up'>
       
       <div className={'mainhome-wrapper'}>
         <div className={'mainhome-wrapper'}>
           {items.map((item) => (
             <div key={item.id} className="imagecontainer-main">
-              <ImageListItem className='imagecontainer'>
+              <ImageListItem className='imagecontainer' data-aos = 'fade-up'>
                 <img src={img} alt={item.title} loading="lazy" style={{borderRadius:'5px'}} className='img-item'/>
                 <ImageListItemBar
                   title={item.name}

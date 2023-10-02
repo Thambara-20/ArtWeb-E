@@ -2,18 +2,20 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
-import './home.css';
-import Welcome from './welcome/welcome';
+import './Home.css';
+import Welcome from './welcome/Welcome';
 import Catelog from './catelog/catelog';
+import SubNav from './subnav/Subnavbar';
 
 
-const Home = () => {
+const Home = ({isDarkMode}) => {
   
 
   return (
     <div className='mainwrapper'>
-      <Welcome/>
-      <Catelog/>
+      <Welcome isDarkMode = {isDarkMode}/>
+      <SubNav isDarkMode = {isDarkMode}/>
+    
 
     </div>
   );

@@ -12,7 +12,7 @@ import AOS from 'aos';
 import Loading from '../../../components/Loading';
 
 
-const Catelog = ({isDarkMode}) => {
+const Catelog = ({ isDarkMode }) => {
   const [items, setItems] = useState([]);
 
   const handleBuy = async (id) => {
@@ -20,7 +20,7 @@ const Catelog = ({isDarkMode}) => {
     // For now, let's assume you have a function addToCart(id) that adds the item with the given ID to the cart
     // addToCart(id);
   };
-  
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -40,40 +40,50 @@ const Catelog = ({isDarkMode}) => {
   }, []);
 
   if (items.length === 0) {
-    return <Loading/>;
+    return <Loading />;
   }
 
   return (
-    <div className='mainwrapper' data-aos ='fade-up'>
-      
+    <div className='mainwrapper' data-aos='fade-up'>
+
       <div className={'mainhome-wrapper'}>
-        <div className={'mainhome-wrapper'}>
+   
           {items.map((item) => (
-            <div key={item.id} className="imagecontainer-main">
-              <ImageListItem className='imagecontainer' data-aos = 'fade-up'>
-                <img src={img} alt={item.title} loading="lazy" style={{borderRadius:'5px'}} className='img-item'/>
-                <ImageListItemBar
-                  title={item.name}
-                  subtitle={item.year}
-                  actionIcon={
-                    <div className="item-actions" >
-                      <IconButton sx={{ color: 'rgba(255, 255, 255, 0.54)' }} aria-label={`info about ${item.year}`}>
-                        <InfoIcon />
-                      </IconButton>
-                      <Button className="buy" onClick={() => handleBuy(item.id)} variant="danger" style={{marginRight:'5px'}}>
-                        Buy now
-                      </Button>
-                      <Button className="cart" onClick={() => handleBuy(item.id)} variant="success"style={{marginRight:'5px'}}>
-                        Add To Cart
-                      </Button>
-                    </div>
-                  }
-                />
-              </ImageListItem>
+            <div className='frame-image' style={{ borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}} data-aos = 'fade-up'>
+
+
+              <div key={item.id} className="imagecontainer-main" >
+                <ImageListItem
+                  className='imagecontainer'
+                  data-aos='fade-up'
+                  style={{ borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}
+                >
+                  <img src={img} alt={item.title} loading="lazy" style={{ borderRadius: '10px' }} className='image-item' />
+                  <ImageListItemBar
+                    title={item.name}
+                    subtitle={item.year}
+                    style={{ borderRadius: '10px' }}
+                    actionIcon={
+                      <div className="item-actions">
+                        <IconButton sx={{ color: 'rgba(255, 255, 255, 0.54)' }} aria-label={`info about ${item.year}`}>
+                          <InfoIcon />
+                        </IconButton>
+                        <Button className="buy" onClick={() => handleBuy(item.id)} variant="danger" style={{ marginRight: '5px' }}>
+                          Buy now
+                        </Button>
+                        <Button className="cart" onClick={() => handleBuy(item.id)} variant="success" style={{ marginRight: '5px' }}>
+                          Add To Cart
+                        </Button>
+                      </div>
+                    }
+                  />
+                </ImageListItem>
+
+              </div>
             </div>
           ))}
         </div>
-      </div>
+ 
     </div>
   );
 };

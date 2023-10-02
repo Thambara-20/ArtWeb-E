@@ -12,7 +12,7 @@ const SubNav = () => {
 
   return (
     <div  className='subnav-wrapper'>
-      <h2 className="a-title">Catelog</h2>
+      <h1 className="a-title">Catelogue</h1>
       <nav className="subnavbar">
         <ul className="subnavbar-nav">
         <li
@@ -34,7 +34,7 @@ const SubNav = () => {
           >
             Landscapes
           </li>
-          <li
+          <li 
             className={`subnav-item ${activeTab === 'abstracts' ? 'active' : ''}`}
             onClick={() => handleTabChange('abstracts')}
           >
@@ -43,7 +43,6 @@ const SubNav = () => {
         </ul>
        
       </nav>
-      <div className='bottomline' style={{ left: activeTab === 'all'? '35%':activeTab=== 'potraits'? '38%' :activeTab==='landscapes'?'46%':'55%'}}> </div>
 
       {activeTab === 'all' && 
          <Catelog darkMode />

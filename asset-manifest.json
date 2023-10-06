@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ArtWeb-E/static/css/main.ab954f7d.css",
-    "main.js": "/ArtWeb-E/static/js/main.0b050dc1.js",
+    "main.css": "/ArtWeb-E/static/css/main.32e28b05.css",
+    "main.js": "/ArtWeb-E/static/js/main.568d71fc.js",
     "static/js/787.cda612ba.chunk.js": "/ArtWeb-E/static/js/787.cda612ba.chunk.js",
     "static/media/chinise-city.jpg": "/ArtWeb-E/static/media/chinise-city.b869a62776686ecca6d9.jpg",
     "static/media/img.jpg": "/ArtWeb-E/static/media/img.fe9c2096dabd34e0ec07.jpg",
     "static/media/loading.gif": "/ArtWeb-E/static/media/loading.90672f1deffccbcdf4f1.gif",
     "index.html": "/ArtWeb-E/index.html",
-    "main.ab954f7d.css.map": "/ArtWeb-E/static/css/main.ab954f7d.css.map",
-    "main.0b050dc1.js.map": "/ArtWeb-E/static/js/main.0b050dc1.js.map",
+    "main.32e28b05.css.map": "/ArtWeb-E/static/css/main.32e28b05.css.map",
+    "main.568d71fc.js.map": "/ArtWeb-E/static/js/main.568d71fc.js.map",
     "787.cda612ba.chunk.js.map": "/ArtWeb-E/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab954f7d.css",
-    "static/js/main.0b050dc1.js"
+    "static/css/main.32e28b05.css",
+    "static/js/main.568d71fc.js"
   ]
 }

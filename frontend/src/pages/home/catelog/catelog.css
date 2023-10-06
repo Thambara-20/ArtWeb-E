@@ -19,7 +19,7 @@
   .frame-image{
 
     display: flex;
-    margin: 20px;
+    margin: 10px;
     border-radius: 5px;
     transition: transform 0.2s ease-in-out !important;
     
@@ -28,7 +28,7 @@
     transform: scale(1.04) !important;
   }
   .imagecontainer-main{
-    margin: 20px ;
+    margin: 10px ;
     border-radius: 5px;
     
     
@@ -55,8 +55,7 @@
   
   .image-item{
     box-shadow: 0 10 10px rgba(0, 0, 0, 0.2) !important;
-    
-  }
+    }
 
   /* Media query for smaller screens */
   @media (max-width: 768px) {

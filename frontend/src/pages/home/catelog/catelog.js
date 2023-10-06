@@ -49,20 +49,20 @@ const Catelog = ({ isDarkMode }) => {
       <div className={'mainhome-wrapper'}>
    
           {items.map((item) => (
-            <div className='frame-image' style={{ borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}} data-aos = 'fade-up'>
+            <div className='frame-image' style={{ borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}} data-aos = 'fade-up'>
 
 
               <div key={item.id} className="imagecontainer-main" >
                 <ImageListItem
                   className='imagecontainer'
                   data-aos='fade-up'
-                  style={{ borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}
+                  style={{ borderRadius: '5px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)'}}
                 >
-                  <img src={img} alt={item.title} loading="lazy" style={{ borderRadius: '10px' }} className='image-item' />
+                  <img src={img} alt={item.title} loading="lazy" style={{ borderRadius: '5px' }} className='image-item' />
                   <ImageListItemBar
                     title={item.name}
                     subtitle={item.year}
-                    style={{ borderRadius: '10px' }}
+                    style={{ borderRadius: '5px' }}
                     actionIcon={
                       <div className="item-actions">
                         <IconButton sx={{ color: 'rgba(255, 255, 255, 0.54)' }} aria-label={`info about ${item.year}`}>

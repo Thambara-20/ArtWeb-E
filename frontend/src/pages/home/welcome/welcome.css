@@ -71,4 +71,7 @@
     .welcome-left{
         flex:0.2;
     }
+    .main-welcome-wrapper{
+        height: 70vh;
+    }
   }

@@ -13,6 +13,7 @@
     display: flex;
     margin-top: 20px;
     width: 100%;
+ 
     justify-content: center;
     align-items: center;
   }
@@ -90,8 +91,19 @@
    
     .bottomline {
       width: 20%;
-      left: 10%;
+     
     }
+    .a-title{
+      margin-bottom: 45px;
+    }
+    .subnav-item{
+      padding: 1px 1px 1px 1px;
+    }
+    .subnavbar-nav{
+      padding-left: 10px;
+      padding-right: 0;
+    }
+    
   }
 
   

@@ -38,7 +38,7 @@ const SubNav = () => {
             className={`subnav-item ${activeTab === 'abstracts' ? 'active' : ''}`}
             onClick={() => handleTabChange('abstracts')}
           >
-            Abstracts
+            Abstract
           </li>
         </ul>
        
